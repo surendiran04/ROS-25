@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int     @id @default(autoincrement())
+  kid       String  @unique
+  firstname  String
+  lastname String
+  phone String
+  password  String
+  email     String? @unique
+  character String?
+  level1    String?
+  level2    String?
+  
+  // Define a one-to-many relationship with Score
+  scores    Score[]
+}
+
+model QNA {
+  question_number Int      @id @default(autoincrement())
+  question        String
+  description     String
+  choices         String[]
+  answers         String
+  image           String
+  type            String
+  level           Int
+  set             Int
+}
+
+model Score {
+  id          Int      @id @default(autoincrement())
+  // Define a foreign key relation with User
+  kid         String?  @unique
+  scorer1       Float
+  start_time  DateTime
+  time_scorer1  Float
+  scorer2 Float
+  time_scorer2 Float
+  
+  // Define a field to establish the relation with User
+  user        User?    @relation(fields: [kid], references: [kid])
+}
+
+model Checks {
+  restriction String @unique
+  value Boolean
+}
+

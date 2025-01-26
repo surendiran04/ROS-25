@@ -1,0 +1,149 @@
+POST http://localhost:3000/user/create_user  HTTP/1.1
+Content-Type: application/json 
+
+{
+   
+      "kid": "K2413995",
+      "email": "mail5@gmail.com",
+      "password": "Main@123",
+      "firstname": "Mail",
+      "lastname": "5",
+      "phone": "9876543210"
+}
+
+###
+POST https://api.ros.kurukshetraceg.org.in/user/login  HTTP/1.1
+Content-Type: application/json
+
+{
+    "kid":"ekilli2003@gmail.com",
+    "password":"Killi@2003"     
+}
+
+###
+POST http://localhost:3000/question/set_question HTTP/1.1
+Content-Type: application/json
+
+{
+  "question": "The cat and rabbit weigh 10kgs, the dog and rabbit 20kgs, the dog and the cat 24kgs. What is the weight of all 3 animals together in kgs?",
+  "description": "You are on a plateau starving for food, and you find a magic door with triangles spinning which manages to hypnotize you and you fall inside it. Now you are in a room where a cage is placed on a table that has a cat, a rabbit, and a dog.",
+  "choices": [],
+  "answers": "27",
+  "image": "",
+  "type": "text",
+  "level": 1,
+  "set": 8
+}
+
+
+###
+POST http://localhost:3000/question/view_questions HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImtpZCI6IksyNDEyMzk2IiwiaWF0IjoxNzA3ODQyNzE0LCJleHAiOjE3MDc4NDYzMTR9.gVkyKHGufYF5yhpjidQiQXZC2zC7XEDCEtqZ78q6rC0
+Content-Type: application/json
+
+{
+  "level": "2"
+}
+
+###
+POST http://localhost:3000/score/calculate_score HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImtpZCI6IksyNDEyMzk2IiwiaWF0IjoxNzA3ODQyNzE0LCJleHAiOjE3MDc4NDYzMTR9.gVkyKHGufYF5yhpjidQiQXZC2zC7XEDCEtqZ78q6rC0
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://localhost:3000/score/leaderboard HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwia2lkIjoiSzI0MDAzMTciLCJpYXQiOjE3MDc4OTcxMDIsImV4cCI6MTcwNzkwMDcwMn0.VRZNqLpxYUs8y1jqhQ5y3vjAAHSwPtw8-p2aFeMvQ9o
+Content-Type: application/json
+
+###
+POST http://localhost:3000/user/setCharacter HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsImtpZCI6IjMyMTAiLCJpYXQiOjE3MDcyODUxODIsImV4cCI6MTcwNzI4ODc4Mn0.QJ-eym7eo5lKF2LsprLq1xlXiMll5P6ocZ4fcBAoK30
+Content-Type: application/json
+
+{
+  "character":"hero1"
+}
+
+###
+GET http://localhost:3000/user/getCharacter HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImtpZCI6IksyNDEyMzk2IiwiaWF0IjoxNzA3ODMxMTQ0LCJleHAiOjE3MDc4MzQ3NDR9.Eh9R-a4OB_Sp-1UNKc1_S20F1B7FLVF_16jSe2eW1Og
+Content-Type: application/json
+
+###
+GET http://localhost:3000/user/getUser HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwia2lkIjoiSzI0MDAzMTciLCJpYXQiOjE3MDc2NTc0MTYsImV4cCI6MTcwNzY2MTAxNn0.txAcOdKymVlsaaK75wIcvX6oloDglr7eGOdyekz2pfE
+Content-Type: application/json
+
+###
+GET http://localhost:3000/score/getRank HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwia2lkIjoiazI0MDAwMDEiLCJpYXQiOjE3MDc2MjgwNzksImV4cCI6MTcwNzYzMTY3OX0.gz8j1GA5vB1HR1-o7yP0FSeXLw4iKNOnVoLri8PgU9Q
+Content-Type: application/json
+
+###
+POST http://localhost:3000/score/calculate_scorer2 HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImtpZCI6IksyNDEyMzk2IiwiaWF0IjoxNzA3ODQ2NzE3LCJleHAiOjE3MDc4NTAzMTd9.9PI7chFlZk1DQsQ7rAN57CqrRu8DOzbDBiPR6bStC3A
+Content-Type: application/json
+
+{
+  
+}
+
+###
+GET http://localhost:3000/score/leaderboardr2 HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwia2lkIjoiazI0MDAwMDEiLCJpYXQiOjE3MDc2MjgyMDIsImV4cCI6MTcwNzYzMTgwMn0.ZLsg6oxcgKl6512uk4HAd7slClW1Ici3as6MZ4jJgB4
+Content-Type: application/json
+
+###
+GET https://api.ros.kurukshetraceg.org.in/score/getScoreboard HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwia2lkIjoiazI0MDAwMDAiLCJpYXQiOjE3MDc2MzA5NjcsImV4cCI6MTcwNzYzNDU2N30.t3_oxIsOtIZV-nzXHdoL_EYYSmIi9a0hRqROHg043lY
+Content-Type: application/json
+
+###
+POST https://api.kurukshetraceg.org.in/api/v1/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "ekilli2003@gmail.com",
+  "pwd":"Killi@2003"
+}
+
+###
+POST https://api.ros.kurukshetraceg.org.in/check/create_check HTTP/1.1
+Content-Type: application/json
+
+{
+  "restriction":"newLogin",
+  "value":true
+}
+
+###
+POST https://api.ros.kurukshetraceg.org.in/check/update_check HTTP/1.1
+Content-Type: application/json
+
+{
+  "restriction":"login",
+  "value":true
+}
+
+###
+POST http://localhost:3000/check/view_check HTTP/1.1
+Content-Type: application/json
+
+{
+  "restriction":"newLogin"
+}
+
+###
+GET https://api.kurukshetraceg.org.in/api/v1/admin/get-ca-leaderboard?user=ca&access=ctfspyinothercolleges HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/user/authlogin  HTTP/1.1
+Content-Type: application/json
+
+{
+  "kid":"K2401015"
+}

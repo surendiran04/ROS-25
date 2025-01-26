@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    
+}
+
+:root{
+    --color-dark: #2C3131;
+    --color-light: #F3F3F2;
+}
+
+#main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width:100%;
+        background-image:url("Background.png") !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+
+}
+.board {
+    text-align: center;
+    background-image:url("Background.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;   
+}
+
+.board .leaderboard{
+    margin-top: 5em;;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue
+}
+
+.active{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#profile{
+    margin-top: 3em;
+    color:#F3F3F2;
+    font-weight:bold;
+    font-size: large;
+}
+
+#profile .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+#profile .flex .item{
+    display: flex;
+    align-items: center;
+    
+}
+#profile .flex:hover{
+    background: rgba(255, 255, 255, 0.2);
+    width:100%;
+}
+#profile .flex img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+#profile .flex .info{
+   padding: 1em;
+}
+
+.text-dark{
+    color:white;
+    font-weight: normal;
+}
+.item>h3{
+    color:beige
+}
+.item{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.board{
+    backdrop-filter: blur(16px) saturate(113%);
+    -webkit-backdrop-filter: blur(16px) saturate(113%);
+    background-color: rgba(126, 52, 191, 0.015);
+   border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.125);
+    width:100%;
+}
