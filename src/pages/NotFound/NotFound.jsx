@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "@/assets/bg/astro3_resized.webp";
+import bg from "@/assets/bg/nt-fnd.jpg";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
@@ -20,7 +20,8 @@ const NotFound = () => {
             }}
             className="drop-shadow-[0_0_50px_rgba(0,0,0,0.75)] leading-none relative text-[clamp(100px,40vw,350px)] font-bold"
           >
-            404
+          
+           
           </h1>
           <span
             style={{
@@ -30,7 +31,7 @@ const NotFound = () => {
             }}
             className="py-1 drop-shadow-[0_0_50px_rgba(0,0,0,0.75)] text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold tracking-wide text-center"
           >
-            Page not found
+               PAGE NOT FOUND
           </span>
           <Link to="/" className="mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12">
             <button className="w-full max-w-[200px] py-2 px-8 md:px-12 m-1 rounded-full border-2 border-orange-200/10 bg-black text-xs md:text-base xl:text-lg font-medium tracking-widest text-orange-400 hover:bg-slate-950/60">
