@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Cookie from "js-cookie";
 import { Link, useNavigate } from "react-router-dom";
-import bg from "@/assets/bg/astro4.jpg";
+import bg from "@/assets/bg/instr.jpg";
 import Logo from "@/assets/logo.png";
 import { LoaderContext } from "@/context/LoaderContext";
 import Loader from "@/components/Loader/Loader";

@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "@/assets/bg/astro1.jpg";
+import bg from "@/assets/bg/team.jpg";
 import Logo from "@/assets/logo.png";
 import { motion } from "framer-motion";
 import { CoordsData } from "./TeamData";

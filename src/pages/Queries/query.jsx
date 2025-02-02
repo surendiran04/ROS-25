@@ -1,5 +1,5 @@
 import Logo from "@/assets/logo.png";
-import bg from "@/assets/bg/astro3.jpg";
+import bg from "@/assets/bg/bg_t.jpg";
 import { Link } from 'react-router-dom'
 import toast from "react-hot-toast";
 import React, { useEffect } from "react";
