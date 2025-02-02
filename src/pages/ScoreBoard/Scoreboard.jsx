@@ -6,7 +6,7 @@ import Fivestar from "@/assets/scoreboard/star5.svg";
 import GreyFivestar from "@/assets/scoreboard/greystar5.png";
 import { Link } from "react-router-dom";
 import Logo from "@/assets/logo.png";
-import bg from "@/assets/scoreboard/scoreboard_bg.jpg";
+import bg from "@/assets/scoreboard/bermuda.jpg";
 import { cn } from "@/utils/utils";
 import { AuthContext } from "@/context/AuthContext";
 import { useEffect, useContext } from "react";
