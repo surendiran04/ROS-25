@@ -1,5 +1,5 @@
 import React from "react";
-import RoundsBg from "@/assets/rounds/rounds_bg.jpg";
+import RoundsBg from "@/assets/rounds/round1_bg.jpg";
 import Logo from "@/assets/logo.png"
 import Round1 from "./components/Round1";
 import Round2 from "./components/Round2";

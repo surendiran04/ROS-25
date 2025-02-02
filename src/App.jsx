@@ -50,7 +50,7 @@ const App = () => {
             <Route path="/riddle" exact element={<Riddle />} /> {/* added*/}
             <Route path="/rounds" exact element={<Rounds />} />
 
-            {/* <Route path="/rounds/round1" exact element={<Levels1 />} /> */}
+            <Route path="/rounds/round1" exact element={<Levels1 />} />
             {/* ----Enable for round 2---- */}
             {/* <Route path="/rounds/round2" exact element={<Levels2 />} /> */}
 
