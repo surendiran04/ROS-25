@@ -39,30 +39,30 @@ const App = () => {
     <Suspense fallback={<Loader />}>
       <div className="overflow-x-hidden">
         {auth && <Header />}
-        {/* <Header />   added */}
         <Music />
+
         <Routes>
           <Route path="/" exact element={<Login />} />
-          <Route path="/login" exact element={<Login />} />       
+          <Route path="/login" exact element={<Login />} /> 
+
             <Route element={<ProtectedRoutes />}>
-            <Route path="/Avatars" exact element={<Avatars />} />
+            <Route path="/Avatars" exact element={<Avatars />} />  {/*not done */}
             <Route path="/Instructions" exact element={<Instructions />} />
-            <Route path="/riddle" exact element={<Riddle />} />
+            <Route path="/riddle" exact element={<Riddle />} />  {/*not done */}
             <Route path="/rounds" exact element={<Rounds />} />
-            <Route path="/rounds/round1" exact element={<Levels1 />} />
+            <Route path="/rounds/round1" exact element={<Levels1 />} /> {/*not done */}
             {/* ----Enable for round 2---- */}
-            <Route path="/rounds/round2" exact element={<Levels2 />} />
-
+            <Route path="/rounds/round2" exact element={<Levels2 />} /> {/*not done */}
             <Route path="/rounds/round1/:level" exact element={<Riddle />} />
-
             <Route path="/rounds/round2/:level" exact element={<Riddle />} />
-            <Route path="/Leaderboard" exact element={<Leaderboard />} />
-            <Route path="/Scoreboard" exact element={<Scoreboard />} />
+            <Route path="/Leaderboard" exact element={<Leaderboard />} />  
+            <Route path="/Scoreboard" exact element={<Scoreboard />} /> {/*not done */}
           </Route>
 
           <Route path="/team" exact element={<Team />} />
           <Route path="*" exact element={<NotFound />} />
           <Route path="/query" exact element={<Query />} />
+         
         </Routes>
       </div>
     </Suspense>
