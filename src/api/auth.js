@@ -79,7 +79,7 @@ const rosLogin = async (data) => {
       restriction: "login",
     };
     const check = await api.post("/check/view_check", data1);
-    //console.log(check);
+    // console.log(check);
     try {
       const response = await api.post("/user/login", data);
       const responseData = response.data;
