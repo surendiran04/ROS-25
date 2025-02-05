@@ -170,11 +170,11 @@ const Login2 = () => {
           </div>
         </div>
       </div>
-      <a href="https://kurukshetraceg.org.in" target="_blank">
+      {/* <a href="https://kurukshetraceg.org.in" target="_blank">   Image blocking the sidebar
         <div className="sm:block hidden absolute top-0 left-4 p-4 rounded-full sm:visible">
           <img src="https://kurukshetraceg.org.in/assets/KLogoWhite-DDArUp1X.webp" className="h-14" alt="Kurukshetra'24" />
         </div>
-      </a>
+      </a> */}
       <div className="fixed bottom-5 left-5">
         <Link to="/query">
           <button className="w-full p-4 rounded-lg border-2 border-orange-200/10 bg-black/50 py-2 font-subtitle font-medium tracking-widest text-orange-400 hover:bg-slate-950/60">
