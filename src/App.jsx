@@ -54,7 +54,7 @@ const App = () => {
             {/* ----Enable for round 2---- */}
             {/* <Route path="/rounds/round2" exact element={<Levels2 />} /> */}
 
-            {/* <Route path="/rounds/round1/:level" exact element={<Riddle />} /> */}
+            <Route path="/rounds/round1/:level" exact element={<Riddle />} />
 
             {/* <Route path="/rounds/round2/:level" exact element={<Riddle />} /> */}
             
